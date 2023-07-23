@@ -2,6 +2,9 @@ import React from 'react';
 
 const PageInfo = ({page}) => {
     let gender = page.gender === 0 ? "жен." : "муж";
+
+    // console.log(page);
+
     return (
         <div>
             <p><img src={page.picturePath}/></p>
@@ -14,18 +17,18 @@ const PageInfo = ({page}) => {
             <p>Цена: {page.price}</p>
             <p>Номер телефона: {page.phoneNumber}</p>
 
-            <p>
-                {
-                    page.announcementsWorks.map(announcementWork => {
-                        return (
-                            <div>
-                                <p>{announcementWork.workName}</p>
-                                <p>{announcementWork.experience}</p>
-                            </div>
-                        )
-                    })
-                }
-            </p>
+            {/*<p>*/}
+            {/*    {*/}
+            {/*        page.announcementsWorks.map((item) => {*/}
+            {/*            return (*/}
+            {/*                <div>*/}
+            {/*                    <p>{item.workName}</p>*/}
+            {/*                    <p>{item.experience}</p>*/}
+            {/*                </div>*/}
+            {/*            )*/}
+            {/*        })*/}
+            {/*    }*/}
+            {/*</p>*/}
         </div>
     );
 };

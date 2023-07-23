@@ -5,7 +5,8 @@ class AnnouncementsApiWorker {
 
     constructor() {
         this.#axios = axios.create({
-            baseURL: "https://localhost:7156/announcements"
+            //baseURL: "https://localhost:7156/announcements"
+            baseURL: "http://localhost/api/announcements"
         });
     }
 
